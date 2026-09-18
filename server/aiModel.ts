@@ -280,7 +280,7 @@ export async function generateQuestionsFromPdfNotes(
     // Priority 2: gemini-3.8-flash (flagship reasoning model)
     const models = ["gemini-3.1-flash-lite", "gemini-3.8-flash"];
 
-    const promptText = `You are an expert examination question setter.
+    const promptText = `You are an expert examination question setter, skilled in creating clear and unambiguous multiple-choice questions directly from provided text.
 MANDATORY GROUNDING DIRECTIVE:
 You MUST generate exactly ${count} Multiple Choice Questions (MCQs) BASED SPECIFICALLY AND EXCLUSIVELY ON THE ATTACHED PDF NOTES.
 
