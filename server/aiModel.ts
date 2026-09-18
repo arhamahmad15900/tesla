@@ -442,7 +442,7 @@ Strict Requirements:
 2. Questions must be strictly based on the official NIELIT O Level R5.1 curriculum.
 3. Return only valid JSON adhering to the schema.`;
 
-    const models = ["gemini-3.1-flash-lite", "gemini-3.8-flash"];
+    const models = ["gemini-3.1-pro", "gemini-3.5-flash"];
     for (const model of models) {
       try {
         const response = await ai.models.generateContent({
